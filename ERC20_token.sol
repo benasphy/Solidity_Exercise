@@ -11,6 +11,11 @@ contract ERC20Token{
     event Approval(address indexed _owner, address indexed _spender, uint _value);
     event Transfer(address indexed _from, address indexed to, uint _value);
 
+    constructor() {
+        owner = msg.sender;
+        balances[owner] = _totalSupply;
+    }
+
     //1.totalSupply Function
     function totalSupply() public view returns(uint theTotalSupply){
         theTotalSupply = _totalSupply;
