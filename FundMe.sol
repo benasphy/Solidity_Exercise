@@ -11,7 +11,7 @@ contract FundMe{
     function fund() public payable{
         //Allow user to send usd
         //set minimum usd
-        //1. How do wqe send ETH to tbis contract
+        //1. How do wqe send ETH to this contract
         require(msg.value > 1e18, "didn't send enough ETH");
 
 
