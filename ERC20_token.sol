@@ -16,7 +16,7 @@ contract ERC20Token{
         balances[owner] = _totalSupply;
     }
 
-    //1.totalSupply Function
+    //1. totalSupply Function
     function totalSupply() public view returns(uint theTotalSupply){
         theTotalSupply = _totalSupply;
         return theTotalSupply;
